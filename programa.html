@@ -1,0 +1,32 @@
+
+<canvas width="600" height="400" > 
+
+</canvas>
+
+<script>
+
+var pantalla = document.querySelector("canvas");
+var pincel = pantalla.getContext("2d");
+
+pincel.fillStyle = "black";  // propiedad
+pincel.fillRect(0,0,600,150); // funcion 
+ 
+pincel.fillStyle = "red";  // propiedad
+pincel.fillRect(0,150,600,150); // funcion 
+
+pincel.fillStyle = "gold";  // propiedad
+pincel.fillRect(0,300,600,150); // funcion 
+
+
+pincel.fillStyle = "lightyellow"
+pincel.beginPath(); // reiniciar para comenzar otro dibujo
+pincel.moveTo(300,100);
+pincel.lineTo(200,300);
+pincel.lineTo(400,300);
+pincel.fill();
+ 
+pincel.fillStyle = "blue"
+pincel.beginPath(); // reiniciar para comenzar otro dibujo
+pincel.arc(300,100,50,0,2*3.14);
+pincel.fill();
+</script>
